@@ -3,11 +3,11 @@ aws_dbt_project:
     dev:
       account: YHGIBAS-ZJ87413
       database: AIRBNB
-      password: Silvasilvasilvaeyo2002!
+      password: *************
       role: ACCOUNTADMIN
       schema: DBT_SCHEMA
       threads: 1
       type: snowflake
-      user: DAVIDRICHARD
+      user: ************
       warehouse: COMPUTE_WH
   target: dev
