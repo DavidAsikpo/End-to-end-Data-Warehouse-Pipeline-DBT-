@@ -1,0 +1,14 @@
+{{
+  config(
+    materialized = 'ephemeral'
+    )
+}}
+
+WITH hosts as 
+( SELECT HOST_ID,
+         HOST_NAME,
+         HOST_SINCE,
+         IS_SUPERHOST,
+         HOST_CREATED_AT
+FROM {{ ref('obt') }}
+) SELECT * FROM hosts
